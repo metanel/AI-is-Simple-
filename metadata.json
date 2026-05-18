@@ -1,0 +1,6 @@
+{
+  "name": "זיקוק אסטרטגי — AI זה פשוט",
+  "description": "הפוך לקוחות לקרה לרכישה ישירה באמצעות בינה מלאכותית. קורס תדמית ותוכן מאת מתנאל.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
