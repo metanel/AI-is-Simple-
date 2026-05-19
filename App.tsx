@@ -73,7 +73,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="text-5xl md:text-9xl font-extrabold font-display tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 drop-shadow-[0_0_15px_rgba(168,85,247,0.4)]"
+              className="text-5xl md:text-8xl font-bold font-display tracking-wide text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             >
               ברוכים הבאים <br/> לעולם החדש
             </motion.h1>
@@ -81,7 +81,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="mt-8 text-xl md:text-3xl text-zinc-200 font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-md"
+              className="mt-8 text-xl md:text-2xl text-zinc-100 font-normal max-w-3xl mx-auto leading-loose drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]"
             >
               העתיד של העסק שלך מתחיל כאן. <br className="hidden md:block" /> שיטה אחת פשוטה להפוך בינה מלאכותית למכונה של לקוחות.
             </motion.p>
