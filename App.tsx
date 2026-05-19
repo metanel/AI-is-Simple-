@@ -27,8 +27,7 @@ const VideoBackground = () => {
         playsInline
         className="absolute w-full h-full object-cover opacity-80 scale-105"
       >
-        {/* יש להוסיף קובץ וידאו צבעוני לתיקיית ה-public תחת השם הזה */}
-        <source src="/colorful-ai-bg.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}colorful-ai-bg.mp4`} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-transparent to-zinc-950/90" />
       <div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]" />
