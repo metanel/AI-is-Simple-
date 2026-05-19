@@ -19,18 +19,19 @@ import {
 
 const VideoBackground = () => {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-black">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-zinc-900">
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute w-full h-full object-cover opacity-60 scale-105"
+        className="absolute w-full h-full object-cover opacity-80 scale-105"
       >
-        <source src="https://www.gstatic.com/aistudio/starter-apps/type-motion/smoke_v2.mp4" type="video/mp4" />
+        {/* יש להוסיף קובץ וידאו צבעוני לתיקיית ה-public תחת השם הזה */}
+        <source src="/colorful-ai-bg.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/90" />
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-transparent to-zinc-950/90" />
+      <div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]" />
     </div>
   );
 };
@@ -73,7 +74,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="text-5xl md:text-9xl font-extrabold font-display tracking-tighter text-glow"
+              className="text-5xl md:text-9xl font-extrabold font-display tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 drop-shadow-[0_0_15px_rgba(168,85,247,0.4)]"
             >
               ברוכים הבאים <br/> לעולם החדש
             </motion.h1>
@@ -81,7 +82,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="mt-8 text-xl md:text-3xl text-stone-300 font-light max-w-3xl mx-auto leading-relaxed"
+              className="mt-8 text-xl md:text-3xl text-zinc-200 font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-md"
             >
               העתיד של העסק שלך מתחיל כאן. <br className="hidden md:block" /> שיטה אחת פשוטה להפוך בינה מלאכותית למכונה של לקוחות.
             </motion.p>
